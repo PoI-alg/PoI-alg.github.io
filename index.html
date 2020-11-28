@@ -1,0 +1,883 @@
+<!DOCTYPE HTML>
+<!--
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>PoI Presentation Page</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" http-equiv=Content-Type />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<style type="text/css">
+			.tg  {border-collapse:collapse;border-spacing:0;}
+			.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:12px;
+			  overflow:hidden;padding:1px 1px;word-break:normal;}
+			.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:12px;
+			  font-weight:normal;overflow:hidden;padding:1px 1px;word-break:normal;}
+			.tg .tg-8jgo{border-color:#ffffff;color:#c0c0c0;text-align:center;vertical-align:top}
+			</style>
+			
+
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="logo">
+							<span class="icon fa-gem"></span>
+						</div>
+						<div class="content">
+							<div class="inner">
+								<h1>PoI Consensus Algorithm</h1>
+								<p>Proof of Intelligence(PoI) is a "one CPU one Vote" consensus mechanism.<br />
+								 It based on the construction complexity of random magic squares.  </p>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="#intro">Intro</a></li>
+								<li><a href="#work">Experiments &nbsp;&nbsp; </a></li>
+								<li><a href="#about">Presentation</a></li>
+								<li><a href="#contact">Support</a></li>
+								<!--<li><a href="#elements">Elements</a></li>-->
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Intro -->
+							<article id="intro">
+								<h2 class="major">Intro</h2>
+								<span class="image main"><img src="images/magic_square.jpg" alt="" /></span>
+								
+								<p> 
+									Cryptographic hashing can be taken as the bottom-level
+									calculation in the digitalized world that is fundamental to
+									the valuation of cryptocurrency. Due to its computational
+									characteristics, bottom-level calculations like cryptographic
+									computations will inevitably lead to the arms race on the
+									frequent updating of computational hardware, resulting in a
+									computational centralization of the mining process for proof
+									of work. We presented a new PoW mechanism based on the
+									construction complexity of random magic squares, each peer using the random magic squares generated
+									preferably by intelligent computations as its votes to replace
+									the random nonce within the blockchain header, therefore
+									called voting magic squares. Just as in the PoW process of
+									Bitcoin system, a cryptographic hash algorithm is employed
+									to count the number of newly-generated different voting magic
+									squares so that a special magic square called recording magic
+									square is found that hashes to a value under a prespecified
+									hardness. The recording magic square found in the last block
+									is used to partially define the voting magic squares for the
+									current block, and the recording magic square found in the
+									current block is taken again to partially define the voting magic
+									squares for the next block, in such a way that the defining
+									elements for voting magic squares are required to not overlap
+									in any two directly chained blocks and not be predictable from
+									the previous block voting process. Taking the random magic
+									squares of order 10 as an example, computational experiments
+									show that, a common PC can generate around 50,000 random
+									magic squares per minute by intelligent computations but
+									decrease to 1/3 of its efficiency if restricted by one row or
+									column of elements. </p>
+								
+									<p>
+									In addition, the
+								    probability of predicting the defining elements from the last
+									block voting process for the voting magic squares in the next
+									block is less than 10^{−20}. By constructing random voting magic
+									squares with successively correlated elements between blocks
+									that cannot be predicted, the traditional proof of hashing-only
+									work is transformed into an intelligent computational NP-hard
+									problem of constructing random magic squares with extra
+									restricted elements as efficient as possible. By this way, an
+									ideal voting scheme of “one-CPU-one-vote”, which Satoshi
+									Nakamoto had wished in his white paper for Bitcoin, can
+									be achieved. As a result, the computational centralization
+									problem and hence possible 51% attacks inherent in the proof
+									of hashing-only work mechanism can be avoided, helping
+									develop a fair, secure and green blockchain technology with
+									stability, efficiency and scalability.
+								</p>
+
+							</article>
+
+						<!-- Work -->
+							<article id="work">
+								<h2 class="major">Experiments</h2>
+								<span class="image main"><img src="images/exp.png" alt="" /></span>
+								
+								<p>
+									We have done a series of experiments on the generation
+									efficiency of restricted row magic squares. 1) On the i9-10900k
+									platform, the efficiency of pure C++ program can reach about
+									240 per second, and the memory consumption is about 1.7MB.
+									After compiling to WASM, the efficiency is reduced to 62%.
+									2) We use WASM program to deploy it to various platforms,
+									so that we can directly test the performance in the browser.
+									The higher the
+									CPU performance, the higher the efficiency of magic squares
+									generation. The efficiency of mobile phones is significantly
+									lower than that of computers, but the difference is within
+									an order of magnitude. Considering the multi-core factor and
+									CPU price, the efficiency of magic square is almost linearly
+									related to the CPU invest, which ensures a basic computational
+									fairness.
+								</p>
+								
+							</article>
+
+						<!-- About -->
+							<article id="about">
+								<h2 class="major">Presentation</h2>
+
+								<div>
+								<div style="float: left;width: 45%;height: 220px;" >
+									<table class="tg" id="previous-magic">
+										<tbody>
+										
+										  <tr>
+											<td class="tg-8jgo">1</td>
+											<td class="tg-8jgo">2</td>
+											<td class="tg-8jgo">3</td>
+											<td class="tg-8jgo">4</td>
+											<td class="tg-8jgo">5</td>
+											<td class="tg-8jgo">6</td>
+											<td class="tg-8jgo">7</td>
+											<td class="tg-8jgo">8</td>
+											<td class="tg-8jgo">9</td>
+											<td class="tg-8jgo">10</td>
+										  </tr>
+										
+										
+										  <tr>
+											<td class="tg-8jgo">11</td>
+											<td class="tg-8jgo">12</td>
+											<td class="tg-8jgo">13</td>
+											<td class="tg-8jgo">14</td>
+											<td class="tg-8jgo">15</td>
+											<td class="tg-8jgo">16</td>
+											<td class="tg-8jgo">17</td>
+											<td class="tg-8jgo">18</td>
+											<td class="tg-8jgo">19</td>
+											<td class="tg-8jgo">20</td>
+										  </tr>
+										  <tr>
+											<td class="tg-8jgo">21</td>
+											<td class="tg-8jgo">22</td>
+											<td class="tg-8jgo">23</td>
+											<td class="tg-8jgo">24</td>
+											<td class="tg-8jgo">25</td>
+											<td class="tg-8jgo">26</td>
+											<td class="tg-8jgo">27</td>
+											<td class="tg-8jgo">28</td>
+											<td class="tg-8jgo">29</td>
+											<td class="tg-8jgo">22</td>
+										  </tr>
+										  <tr>
+											<td class="tg-8jgo">31</td>
+											<td class="tg-8jgo">22</td>
+											<td class="tg-8jgo">24</td>
+											<td class="tg-8jgo">44</td>
+											<td class="tg-8jgo">44</td>
+											<td class="tg-8jgo">44</td>
+											<td class="tg-8jgo">44</td>
+											<td class="tg-8jgo">44</td>
+											<td class="tg-8jgo">44</td>
+											<td class="tg-8jgo">44</td>
+										  </tr>
+										  <tr>
+											<td class="tg-8jgo">41</td>
+											<td class="tg-8jgo">44</td>
+											<td class="tg-8jgo">44</td>
+											<td class="tg-8jgo">44</td>
+											<td class="tg-8jgo">44</td>
+											<td class="tg-8jgo">44</td>
+											<td class="tg-8jgo">44</td>
+											<td class="tg-8jgo">44</td>
+											<td class="tg-8jgo">44</td>
+											<td class="tg-8jgo">44</td>
+										  </tr>
+										  <tr>
+											<td class="tg-8jgo">51</td>
+											<td class="tg-8jgo">44</td>
+											<td class="tg-8jgo">4</td>
+											<td class="tg-8jgo">4</td>
+											<td class="tg-8jgo">4</td>
+											<td class="tg-8jgo">44</td>
+											<td class="tg-8jgo">4</td>
+											<td class="tg-8jgo">4</td>
+											<td class="tg-8jgo">44</td>
+											<td class="tg-8jgo">4</td>
+										  </tr>
+										  <tr>
+											<td class="tg-8jgo">61</td>
+											<td class="tg-8jgo">6</td>
+											<td class="tg-8jgo">66</td>
+											<td class="tg-8jgo">6</td>
+											<td class="tg-8jgo">6</td>
+											<td class="tg-8jgo">6</td>
+											<td class="tg-8jgo">66</td>
+											<td class="tg-8jgo">6</td>
+											<td class="tg-8jgo">6</td>
+											<td class="tg-8jgo">6</td>
+										  </tr>
+										  <tr>
+											<td class="tg-8jgo">71</td>
+											<td class="tg-8jgo">8</td>
+											<td class="tg-8jgo">88</td>
+											<td class="tg-8jgo">8</td>
+											<td class="tg-8jgo">8</td>
+											<td class="tg-8jgo">8</td>
+											<td class="tg-8jgo">88</td>
+											<td class="tg-8jgo">8</td>
+											<td class="tg-8jgo">8</td>
+											<td class="tg-8jgo">8</td>
+										  </tr>
+										  <tr>
+											<td class="tg-8jgo">81</td>
+											<td class="tg-8jgo">99</td>
+											<td class="tg-8jgo">6</td>
+											<td class="tg-8jgo">6</td>
+											<td class="tg-8jgo">6</td>
+											<td class="tg-8jgo">6</td>
+											<td class="tg-8jgo">66</td>
+											<td class="tg-8jgo">6</td>
+											<td class="tg-8jgo">6</td>
+											<td class="tg-8jgo">6</td>
+										  </tr>
+										  <tr>
+											<td class="tg-8jgo">91</td>
+											<td class="tg-8jgo">8</td>
+											<td class="tg-8jgo">8</td>
+											<td class="tg-8jgo">87</td>
+											<td class="tg-8jgo">7</td>
+											<td class="tg-8jgo">6</td>
+											<td class="tg-8jgo">5</td>
+											<td class="tg-8jgo">5</td>
+											<td class="tg-8jgo">5</td>
+											<td class="tg-8jgo">44</td>
+										  </tr>
+										</tbody>
+										</table>
+								</div >
+
+								<div style="float: left; width: 10%; height: 220px; background-image: url('./images/jiantou.png'); background-repeat:no-repeat; background-size:100% 100%;-moz-background-size:100% 100%;" >
+								
+								
+								</div>
+
+								<div style="float: left;width: 45%;height: 220px;" >
+									<table class="tg" id="current-magic">
+										<tbody>
+										
+										  <tr>
+											<td class="tg-8jgo">1</td>
+											<td class="tg-8jgo">2</td>
+											<td class="tg-8jgo">3</td>
+											<td class="tg-8jgo">4</td>
+											<td class="tg-8jgo">5</td>
+											<td class="tg-8jgo">6</td>
+											<td class="tg-8jgo">7</td>
+											<td class="tg-8jgo">8</td>
+											<td class="tg-8jgo">9</td>
+											<td class="tg-8jgo">10</td>
+										  </tr>
+										
+										
+										  <tr>
+											<td class="tg-8jgo">11</td>
+											<td class="tg-8jgo">12</td>
+											<td class="tg-8jgo">13</td>
+											<td class="tg-8jgo">14</td>
+											<td class="tg-8jgo">15</td>
+											<td class="tg-8jgo">16</td>
+											<td class="tg-8jgo">17</td>
+											<td class="tg-8jgo">18</td>
+											<td class="tg-8jgo">19</td>
+											<td class="tg-8jgo">20</td>
+										  </tr>
+										  <tr>
+											<td class="tg-8jgo">21</td>
+											<td class="tg-8jgo">22</td>
+											<td class="tg-8jgo">23</td>
+											<td class="tg-8jgo">24</td>
+											<td class="tg-8jgo">25</td>
+											<td class="tg-8jgo">26</td>
+											<td class="tg-8jgo">27</td>
+											<td class="tg-8jgo">28</td>
+											<td class="tg-8jgo">29</td>
+											<td class="tg-8jgo">22</td>
+										  </tr>
+										  <tr>
+											<td class="tg-8jgo">31</td>
+											<td class="tg-8jgo">22</td>
+											<td class="tg-8jgo">24</td>
+											<td class="tg-8jgo">44</td>
+											<td class="tg-8jgo">44</td>
+											<td class="tg-8jgo">44</td>
+											<td class="tg-8jgo">44</td>
+											<td class="tg-8jgo">44</td>
+											<td class="tg-8jgo">44</td>
+											<td class="tg-8jgo">44</td>
+										  </tr>
+										  <tr>
+											<td class="tg-8jgo">41</td>
+											<td class="tg-8jgo">44</td>
+											<td class="tg-8jgo">44</td>
+											<td class="tg-8jgo">44</td>
+											<td class="tg-8jgo">44</td>
+											<td class="tg-8jgo">44</td>
+											<td class="tg-8jgo">44</td>
+											<td class="tg-8jgo">44</td>
+											<td class="tg-8jgo">44</td>
+											<td class="tg-8jgo">44</td>
+										  </tr>
+										  <tr>
+											<td class="tg-8jgo">51</td>
+											<td class="tg-8jgo">44</td>
+											<td class="tg-8jgo">4</td>
+											<td class="tg-8jgo">4</td>
+											<td class="tg-8jgo">4</td>
+											<td class="tg-8jgo">44</td>
+											<td class="tg-8jgo">4</td>
+											<td class="tg-8jgo">4</td>
+											<td class="tg-8jgo">44</td>
+											<td class="tg-8jgo">4</td>
+										  </tr>
+										  <tr>
+											<td class="tg-8jgo">61</td>
+											<td class="tg-8jgo">6</td>
+											<td class="tg-8jgo">66</td>
+											<td class="tg-8jgo">6</td>
+											<td class="tg-8jgo">6</td>
+											<td class="tg-8jgo">6</td>
+											<td class="tg-8jgo">66</td>
+											<td class="tg-8jgo">6</td>
+											<td class="tg-8jgo">6</td>
+											<td class="tg-8jgo">6</td>
+										  </tr>
+										  <tr>
+											<td class="tg-8jgo">71</td>
+											<td class="tg-8jgo">8</td>
+											<td class="tg-8jgo">88</td>
+											<td class="tg-8jgo">8</td>
+											<td class="tg-8jgo">8</td>
+											<td class="tg-8jgo">8</td>
+											<td class="tg-8jgo">88</td>
+											<td class="tg-8jgo">8</td>
+											<td class="tg-8jgo">8</td>
+											<td class="tg-8jgo">8</td>
+										  </tr>
+										  <tr>
+											<td class="tg-8jgo">81</td>
+											<td class="tg-8jgo">99</td>
+											<td class="tg-8jgo">6</td>
+											<td class="tg-8jgo">6</td>
+											<td class="tg-8jgo">6</td>
+											<td class="tg-8jgo">6</td>
+											<td class="tg-8jgo">66</td>
+											<td class="tg-8jgo">6</td>
+											<td class="tg-8jgo">6</td>
+											<td class="tg-8jgo">6</td>
+										  </tr>
+										  <tr>
+											<td class="tg-8jgo">91</td>
+											<td class="tg-8jgo">8</td>
+											<td class="tg-8jgo">8</td>
+											<td class="tg-8jgo">87</td>
+											<td class="tg-8jgo">7</td>
+											<td class="tg-8jgo">6</td>
+											<td class="tg-8jgo">5</td>
+											<td class="tg-8jgo">5</td>
+											<td class="tg-8jgo">5</td>
+											<td class="tg-8jgo">44</td>
+										  </tr>
+										</tbody>
+										</table>
+								</div>
+							</div>
+							<br>
+							<p>&nbsp;</p>
+							Generate a new restricted row magic square: &nbsp;&nbsp; <button id="new-btn">
+								PRESS
+							</button>
+							<p></p>
+							<br>
+							Enter next restricted row magic square generation round: &nbsp;&nbsp; <button id="next-btn">
+								PRESS
+							</button>
+														
+							</article>
+
+						<!-- Contact -->
+							<article id="contact">
+								<h2 class="major">Support</h2>
+								<!-- <form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<label for="name">Name</label>
+											<input type="text" name="name" id="name" />
+										</div>
+										<div class="field half">
+											<label for="email">Email</label>
+											<input type="text" name="email" id="email" />
+										</div>
+										<div class="field">
+											<label for="message">Message</label>
+											<textarea name="message" id="message" rows="4"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" class="primary" /></li>
+										<li><input type="reset" value="Reset" /></li>
+									</ul>
+								</form> -->
+
+								<p>This project is supported by the World Park of Digital Economy EVONature Foundation.
+								</p>
+
+								<ul class="icons">
+									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</article>
+
+						<!-- Elements -->
+							<article id="elements">
+								<h2 class="major">Elements</h2>
+
+								<section>
+									<h3 class="major">Text</h3>
+									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+									<hr />
+									<h2>Heading Level 2</h2>
+									<h3>Heading Level 3</h3>
+									<h4>Heading Level 4</h4>
+									<h5>Heading Level 5</h5>
+									<h6>Heading Level 6</h6>
+									<hr />
+									<h4>Blockquote</h4>
+									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+									<h4>Preformatted</h4>
+									<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+    print 'Iteration ' + i;
+    deck.shuffle();
+    i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+								</section>
+
+								<section>
+									<h3 class="major">Lists</h3>
+
+									<h4>Unordered</h4>
+									<ul>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Alternate</h4>
+									<ul class="alt">
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Ordered</h4>
+									<ol>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis viverra.</li>
+										<li>Felis enim feugiat.</li>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis lorem.</li>
+										<li>Felis enim et feugiat.</li>
+									</ol>
+									<h4>Icons</h4>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+									</ul>
+
+									<h4>Actions</h4>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3 class="major">Table</h3>
+									<h4>Default</h4>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+
+									<h4>Alternate</h4>
+									<div class="table-wrapper">
+										<table class="alt">
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+								</section>
+
+								<section>
+									<h3 class="major">Buttons</h3>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Primary</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button">Default</a></li>
+										<li><a href="#" class="button small">Small</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
+										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
+									</ul>
+									<ul class="actions">
+										<li><span class="button primary disabled">Disabled</span></li>
+										<li><span class="button disabled">Disabled</span></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3 class="major">Form</h3>
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="demo-name">Name</label>
+												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
+											</div>
+											<div class="field half">
+												<label for="demo-email">Email</label>
+												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
+											</div>
+											<div class="field">
+												<label for="demo-category">Category</label>
+												<select name="demo-category" id="demo-category">
+													<option value="">-</option>
+													<option value="1">Manufacturing</option>
+													<option value="1">Shipping</option>
+													<option value="1">Administration</option>
+													<option value="1">Human Resources</option>
+												</select>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+												<label for="demo-priority-low">Low</label>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-high" name="demo-priority">
+												<label for="demo-priority-high">High</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-copy" name="demo-copy">
+												<label for="demo-copy">Email me a copy</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-human" name="demo-human" checked>
+												<label for="demo-human">Not a robot</label>
+											</div>
+											<div class="field">
+												<label for="demo-message">Message</label>
+												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" class="primary" /></li>
+											<li><input type="reset" value="Reset" /></li>
+										</ul>
+									</form>
+								</section>
+
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">&copy; the World Park of Digital Economy EVONature Foundation.</p>
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			
+
+			<script>
+				var buffer = new Uint8Array(100);
+				function stringToByte(str) {
+					var len, c;
+					len = str.length;
+					var bytes = [];
+					for (var i = 0; i < len; i++) {
+						c = str.charCodeAt(i);
+						bytes.push(c & 0xFF);
+
+					}
+					return new Int8Array(bytes);
+				}
+
+				function byteToString(bytes) {
+					var str = '';
+					for (var i = 0; i < bytes.length; i++) {
+						str += String.fromCharCode(bytes[i]);
+					}
+					return str;
+				}
+
+				function add_str_to_privous_table(magic_str){
+					var table_html = "<tbody>";
+					var magic_bytes_list = [];
+					magic_num_list = magic_str.trim().split(" ");
+					for(var i = 0;i<10;i++){
+						table_html += "<tr>";
+						for(var j = 0;j<10;j++){
+							if(i===9){
+								table_html+="<td class=\"tg-8jgo\" style=\"color:red\">"+ magic_num_list[i*10+j]+"</td>"
+
+							}else{
+								table_html+="<td class=\"tg-8jgo\">"+ magic_num_list[i*10+j]+"</td>"
+
+							}
+						}
+						table_html += "</tr>";
+					}
+					table_html += "</tbody>";
+					document.querySelector("#previous-magic").innerHTML = table_html;
+				}
+
+				function add_str_to_current_table(magic_str){
+					var table_html = "<tbody>";
+					var magic_bytes_list = [];
+					magic_num_list = magic_str.trim().split(" ");
+					for(var i = 0;i<10;i++){
+						table_html += "<tr>";
+						for(var j = 0;j<10;j++){
+							if(i===0){
+								table_html+="<td class=\"tg-8jgo\" style=\"color:green\" >"+ magic_num_list[i*10+j]+"</td>"
+
+							}else{
+								table_html+="<td class=\"tg-8jgo\">"+ magic_num_list[i*10+j]+"</td>"
+
+							}
+						}
+						table_html += "</tr>";
+					}
+					table_html += "</tbody>";
+					document.querySelector("#current-magic").innerHTML = table_html;
+				}
+
+
+				
+				var initial_magic_square_string = "9 52 69 100 59 95 45 16 43 17 98 63 50 41 64 8 25 81 72 3 56 85 13 51 29 33 34 23 89 92 77 87 71 66 5 21 20 60 1 97 7 10 65 26 84 49 99 83 15 67 62 61 2 35 82 88 76 14 48 37 6 44 12 78 91 31 55 86 74 28 79 39 96 46 19 58 36 22 70 40 54 11 47 24 68 32 73 27 75 94 57 53 80 38 4 90 42 93 18 30";
+				
+				var pre_current_restrictied_magic_square_string = initial_magic_square_string;
+				var current_restrictied_magic_square_string = initial_magic_square_string;
+
+				function init_magic_square(init_string){
+					var magic_bytes_list = [];
+					magic_num_list = init_string.trim().split(" ");
+					for (var j = 0; j < magic_num_list.length; j++) {
+						magic_bytes_list.push(parseInt(magic_num_list[j]) & 0xFF);
+					}
+					
+					var result = Module.ccall(
+                        'reset_initial_magic_square',	// name of C function 
+                        null,	// return type
+                        ['string', 'bool'],	// argument types
+                        [byteToString(magic_bytes_list), false]	// arguments
+					);
+
+					add_str_to_privous_table(init_string);
+				}
+				
+				
+				window.onload = function(){
+					add_str_to_privous_table(initial_magic_square_string);
+					add_str_to_current_table("0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0");
+				}
+				
+
+
+				function generate_current_magic_square(){
+					var result = Module.ccall(
+                        'calculate_constraint_magic_square',	// name of C function 
+                        'string',	// return type
+                        ['string'],	// argument types
+                        ["0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"]	// arguments
+					);
+					
+					str_num_list = stringToByte(result);
+                    str2 = "";
+                    for (var i = 9; i >= 0; i--) {
+                        for (var j = 0; j < 10; j++) {
+                            str2 += str_num_list[i * 10 + j] + " ";
+                        }
+
+					}
+					
+					add_str_to_current_table(str2);
+					current_restrictied_magic_square_string = str2;
+				}
+
+
+				function generate_next_magic_square(){
+					var result = Module.ccall(
+                        'calculate_constraint_magic_square',	// name of C function 
+                        'string',	// return type
+                        ['string'],	// argument types
+                        ["0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"]	// arguments
+					);
+					
+					str_num_list = stringToByte(result);
+                    str2 = "";
+                    for (var i = 9; i >= 0; i--) {
+                        for (var j = 0; j < 10; j++) {
+                            str2 += str_num_list[i * 10 + j] + " ";
+                        }
+
+					}
+					
+					add_str_to_current_table(str2);
+					pre_current_restrictied_magic_square_string = current_restrictied_magic_square_string;
+					current_restrictied_magic_square_string = str2;
+					
+				}
+
+
+
+				
+				document.querySelector('#new-btn')
+                .addEventListener('click', function () {
+					init_magic_square(pre_current_restrictied_magic_square_string);
+					generate_current_magic_square();
+				});
+
+				document.querySelector('#next-btn')
+                .addEventListener('click', function () {
+					init_magic_square(current_restrictied_magic_square_string);
+					add_str_to_privous_table(current_restrictied_magic_square_string)
+					generate_next_magic_square();
+				});
+
+
+
+			</script>
+
+			<script async  src="PoI.js"></script>
+			
+	</body>
+</html>
