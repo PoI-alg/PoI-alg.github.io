@@ -506,7 +506,14 @@
 									<ul class="actions">
 										<li><button href="#" id="start-btn" class="button primary">Start</button></li>
 										<li><button href="#" id="stop-btn" class="button">Stop</button></li>
-										<li><h4 id="power" style="margin-top:10px;margin-left: 20px;"> 1s</h4> </li>
+									</ul>
+									<ul	>
+										<li id="power">
+											cosumption time: x (s)
+										</li>
+										<li id="status">
+
+										</li>
 									</ul>
 								</section>
 
@@ -965,7 +972,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 					if(time_count){
 						time = setInterval(() => {
 							second ++;
-							document.getElementById("power").innerText = (second+"s");
+							document.getElementById("power").innerText = ("consumption time:"+ second+"s");
 						}, 1000);
 
 						time_count = 0;
@@ -975,7 +982,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 							
 							w= new Worker("worker.js");	
 							w.onmessage = function (event) {
-								console.log("ssss");
+								document.getElementById("status").innerText = ("Does background worker start background:"+event.data);
 								console.log(event.data);
 							}
 						}else{
@@ -989,6 +996,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 					clearInterval(time);
 					time_count = 1;
 					w.terminate();
+					document.getElementById("status").innerText = "background worker has been terminated."
 				})
 
 
