@@ -45,8 +45,9 @@
 								<li><a href="#intro">Intro</a></li>
 								<li><a href="#work">Experiments &nbsp;&nbsp; </a></li>
 								<li><a href="#about">Presentation</a></li>
+								<li><a href="#test">Test</a></li>
 								<li><a href="#contact">Support</a></li>
-								<!--<li><a href="#elements">Elements</a></li>-->
+								<!-- <li><a href="#elements">Elements</a></li> -->
 							</ul>
 						</nav>
 					</header>
@@ -472,6 +473,45 @@
 								</ul>
 							</article>
 
+							<article id="test">
+								<h2 class="major">Test</h2>
+								<section>
+									<h3 class="major"> Speed Test </h3>
+									<ul class="actions">
+										<li><button id="speed-btn" class="primary" style="margin-bottom: 20px;">
+											Speed
+										</button></li>
+										<li>
+											<button id="clear-btn" class="default" style="margin-bottom: 20px;">
+												Clear
+											</button>
+										</li>
+									</ul>
+
+									<h4>Result</h4>
+									<ol id="speed-result">
+										<!-- <li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis viverra.</li>
+										<li>Felis enim feugiat.</li>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis lorem.</li>
+										<li>Felis enim et feugiat.</li> -->
+									</ol>
+								
+
+								</section>
+								<hr />
+								<section>
+									<h3 class="major"> Power consumption test </h3>
+									<ul class="actions">
+										<li><button href="#" id="start-btn" class="button primary">Start</button></li>
+										<li><button href="#" id="stop-btn" class="button">Stop</button></li>
+										<li><h4 id="power" style="margin-top:10px;margin-left: 20px;"> 1s</h4> </li>
+									</ul>
+								</section>
+
+							</article>
+
 						<!-- Elements -->
 							<article id="elements">
 								<h2 class="major">Elements</h2>
@@ -890,6 +930,68 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 					add_str_to_privous_table(current_restrictied_magic_square_string)
 					generate_next_magic_square();
 				});
+
+
+				document.querySelector('#speed-btn')
+				.addEventListener('click',function(){
+					var start = window.performance.now();
+
+                    for (var i = 0; i < 100; i++) {
+
+                        var result = Module.ccall(
+                            'calculate_constraint_magic_square',	// name of C function 
+                            'string',	// return type
+                            ['string'],	// argument types
+                            ["0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"]	// arguments
+                        );
+                    }
+                    var end = window.performance.now();
+                    console.log(100 * 1000 / (end - start));
+					document.getElementById("speed-result").innerHTML += ("<li>"+100 * 1000 / (end - start) + " magic squares/second \n"+"</li>" );
+				});
+
+				document.querySelector('#clear-btn')
+				.addEventListener('click',function(){
+					document.getElementById("speed-result").innerHTML = "";
+				})
+
+
+				var time_count = 1;
+				var time = 0;
+				var second = 0;
+				var w;
+				document.querySelector('#start-btn')
+				.addEventListener('click',function(){
+					if(time_count){
+						time = setInterval(() => {
+							second ++;
+							document.getElementById("power").innerText = (second+"s");
+						}, 1000);
+
+						time_count = 0;
+
+						if(typeof(Worker)!=="undefined")
+						{
+							
+							w= new Worker("worker.js");	
+							w.onmessage = function (event) {
+								console.log("ssss");
+								console.log(event.data);
+							}
+						}else{
+							console.log("error");
+						}
+					}
+				});
+
+				document.querySelector('#stop-btn')
+				.addEventListener('click',function(){
+					clearInterval(time);
+					time_count = 1;
+					w.terminate();
+				})
+
+
 
 
 
