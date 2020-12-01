@@ -144,7 +144,7 @@
 								<h2 class="major">Presentation</h2>
 
 								<div>
-									<div style="width: 25%;float: left;"> <br><br><br> <p> Privious<br> MS</p>  </div>
+									<div style="width: 25%;float: left;"> <br><br><br> <p> Previous<br> MS</p>  </div>
 									<div style="float: left;width: 70%;height: 220px;" >
 									<table class="tg" id="previous-magic">
 										<tbody>
@@ -281,7 +281,7 @@
 						
 								</div> -->
 							
-								<p style="margin: auto;margin-left: 35%;color: aqua; width: 65%;"><br>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↓ ↓row restricted↓ ↓ </p>
+								<p style="margin: auto;margin-left: 35%;color: aqua; width: 65%;"><br>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↓ ↓Restricted Row↓ ↓ </p>
 								
 								<div>
 
@@ -511,7 +511,7 @@
 									</ul>
 									<ul	>
 										<li id="power">
-											cosumption time: x (s)
+											Time Consumed(Sec.): x
 										</li>
 										<li id="status">
 
@@ -813,7 +813,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 						table_html += "<tr>";
 						for(var j = 0;j<10;j++){
 							if(i===9){
-								table_html+="<td class=\"tg-8jgo\" style=\"color:red\">"+ magic_num_list[i*10+j]+"</td>"
+								table_html+="<td class=\"tg-8jgo\" style=\"color:green\">"+ magic_num_list[i*10+j]+"</td>"
 
 							}else{
 								table_html+="<td class=\"tg-8jgo\">"+ magic_num_list[i*10+j]+"</td>"
@@ -834,7 +834,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 						table_html += "<tr>";
 						for(var j = 0;j<10;j++){
 							if(i===0){
-								table_html+="<td class=\"tg-8jgo\" style=\"color:green\" >"+ magic_num_list[i*10+j]+"</td>"
+								table_html+="<td class=\"tg-8jgo\" style=\"color:red\" >"+ magic_num_list[i*10+j]+"</td>"
 
 							}else{
 								table_html+="<td class=\"tg-8jgo\">"+ magic_num_list[i*10+j]+"</td>"
@@ -974,7 +974,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 					if(time_count){
 						time = setInterval(() => {
 							second ++;
-							document.getElementById("power").innerText = ("consumption time:"+ second+"s");
+							document.getElementById("power").innerText = ("Time Consumed(Sec.):"+ second);
 						}, 1000);
 
 						time_count = 0;
@@ -984,7 +984,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 							
 							w= new Worker("worker.js");	
 							w.onmessage = function (event) {
-								document.getElementById("status").innerText = ("Does background worker start background:"+event.data);
+								document.getElementById("status").innerText = ("Background Woker Status : "+event.data);
 								console.log(event.data);
 							}
 						}else{
@@ -998,7 +998,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 					clearInterval(time);
 					time_count = 1;
 					w.terminate();
-					document.getElementById("status").innerText = "background worker has been terminated."
+					document.getElementById("status").innerText = "Background worker has been terminated."
 				})
 
 
